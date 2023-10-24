@@ -7,7 +7,10 @@ const ReadPosts = ({data}) => {
 
 const [posts, setPosts] = useState([]);
 
-useEffect( () => { setPosts(data)}, [data]);
+useEffect( () => { 
+    setPosts(data)
+}, [data]
+);
 
  return (
     <div className={styles.ReadPosts}>

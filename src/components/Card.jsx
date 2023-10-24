@@ -9,7 +9,7 @@ const Card = ({id, title, author, description}) => {
     const [count, setCount] = useState(0);
 
     const updateCount = () => {
-        setCount(count => count+ 1);
+        setCount(prevCount => prevCount+ 1);
     }
 
   return (
